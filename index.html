@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+
+    <div class="contact_form_wrapper">
+        <form action="mail.php" method="post" class="comment-form" id="comment-form">
+            <div class="row gx-2">
+                <div class="col-xl-6">
+                    <div class="contacts-name">
+                    <input name="author" type="text" placeholder="Name">
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="contacts-email">
+                    <input name="email" type="text" placeholder="Your Email">
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="contacts-email">
+                    <input name="number" type="number" placeholder="Enter your number">
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="contacts-email">
+                    <input name="subject" type="text" placeholder="Enter your subject">
+                    </div>
+                </div>
+                <div class="col-xl-12">
+                    <div class="contacts-message">
+                    <textarea name="comment" cols="20" rows="3" placeholder="Message"></textarea>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <button id="submit-btn" class="theme-btn" type="submit">Submit Now</button>
+                </div>
+                <div id="success-message" style="display: none; color: green; margin-top: 10px; ">Message has been sent successfully</div>
+                <div id="loading-spinner" style="display: none;"></div>
+            </div>
+        </form>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to { 
+        transform: rotate(360deg);
+    }
+  }
+  
+  
+  @-webkit-keyframes rotate {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to { 
+        -webkit-transform: rotate(360deg);
+    }
+  }
+  
+  #loading-spinner {
+    position: absolute;
+    bottom: 8%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    border: solid 4px #CFF480;
+    border-radius: 50%;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    -webkit-transition: all 0.5s ease-in;
+    -webkit-animation-name: rotate;
+    -webkit-animation-duration: 1.0s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    transition: all 0.5s ease-in;
+    animation-name: rotate;
+    animation-duration: 1.0s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  
+  
+  /* Style for disabled button */
+  .disabled-btn {
+      background-color: #aaa !important;
+      opacity: 0.4;
+      cursor: not-allowed !important;
+  }
+  .disabled-btn:hover {
+    color: #292929 !important;
+  }
+  
+  .error-message {
+    font-size: 14px;
+    color: red;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+  body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.contact_form_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.comment-form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 600px;
+}
+
+.row {
+    margin-right: -5px;
+    margin-left: -5px;
+}
+
+.col-xl-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 5px;
+}
+
+.col-12 {
+    padding: 5px;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#success-message {
+    text-align: center;
+}
+
+#loading-spinner {
+    text-align: center;
+    margin-top: 10px;
+}
